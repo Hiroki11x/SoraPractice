@@ -1,75 +1,173 @@
-(These,2)
-(debian,1)
-(Spark,5)
-(The,1)
-(spark,1)
-(minimal,1)
-(small,1)
-(run,3)
-(than,1)
-(protobuf-compiler,1)
-(job,1)
-([![buildstatus](https://travis-ci.org/holdenk/learning-spark-examples.svg?branch=master)](https://travis-ci.org/holdenk/learning-spark-examples),1)
-(number,1)
-(../learning-spark-examples/target/scala-2.10/learning-spark-examples-assembly-0.0.1.jar,1)
-(Examples,2)
-(such,1)
-(against,1)
-(updated,1)
-(higher,1)
-(sudo,1)
-(examples,4)
-(./bin/pyspark,1)
-(in,2)
-(scala-lang.org,1)
-(You,1)
-(compiler,1)
-(versions,2)
-(copy,1)
-(also,2)
-(-,2)
-(com.oreilly.learningsparkexamples.[lang].[example],1)
-(require,2)
-(for,4)
-(directory.,1)
-(script,1)
-(install,2)
-(jar,1)
-(required,1)
-(On,1)
-(Imap,1)
-(OR,1)
-(your,1)
-(may,1)
-(the,10)
-(ChapterSixExample,1)
-(running,1)
-(Spark".,1)
-(files.,1)
-(urllib3,1)
-(alone,1)
-(different,1)
-(you,1)
-(===============,1)
-(either,1)
-(===,2)
-(a,3)
-(or,2)
-(Protobuf,1)
-(be,1)
-(cd,1)
-(./src/python/[example],1)
-(all,1)
-([![Learning,1)
-(to,1)
-(Spark](http://akamaicovers.oreilly.com/images/0636920028512/cat.gif)](http://www.jdoqocy.com/click-7645222-11260198?url=http%3A%2F%2Fshop.oreilly.com%2Fproduct%2F0636920028512.do%3Fcmp%3Daf-strata-books-videos-product_cj_9781449358600_%2525zp&cjsku=0636920028512),1)
-(code,1)
-(of,4)
-(libraries,1)
-(dependencies,2)
-(./bin/spark-submit,1)
-(JDK,1)
-(an,1)
-(and,3)
-(book.,1)
-(mvn,1)
+[notice ]  [JSON] 8.79464 / 
+[notice ]  [addAgent] 8.79981 / 24
+[notice ]  [check_is_json_new] 8.80005 / 1
+[notice ]  [JSON] 9.21891 / 
+[notice ]  [addAgent] 9.22005 / 25
+[notice ]  [check_is_json_new] 9.2202 / 1
+[notice ]  [JSON] 9.52089 / 
+[notice ]  [addAgent] 9.52179 / 26
+[notice ]  [check_is_json_new] 9.52182 / 1
+[notice ]  [JSON] 9.92165 / 
+[notice ]  [addAgent] 9.92219 / 27
+[notice ]  [check_is_json_new] 9.92223 / 1
+[notice ]  [JSON] 10.5305 / 
+[notice ]  [addAgent] 10.532 / 28
+[notice ]  [check_is_json_new] 10.5321 / 1
+[notice ]  [JSON] 10.7955 / 
+[notice ]  [addAgent] 10.7963 / 29
+[notice ]  [check_is_json_new] 10.7963 / 1
+[notice ]  [JSON] 10.9851 / 
+[notice ]  [addAgent] 10.9871 / 30
+[notice ]  [check_is_json_new] 10.9872 / 1
+[notice ]  [JSON] 11.4135 / 
+[notice ]  [addAgent] 11.4144 / 31
+[notice ]  [check_is_json_new] 11.4144 / 1
+[notice ]  [JSON] 11.6971 / 
+[notice ]  [addAgent] 11.6978 / 32
+[notice ]  [check_is_json_new] 11.6979 / 1
+[notice ]  [JSON] 12.4878 / 
+[notice ]  [addAgent] 12.489 / 33
+[notice ]  [check_is_json_new] 12.489 / 1
+[notice ]  [JSON] 12.6198 / 
+[notice ]  [addAgent] 12.6234 / 34
+[notice ]  [check_is_json_new] 12.6237 / 1
+[notice ]  [JSON] 12.7536 / 
+[notice ]  [addAgent] 12.7552 / 35
+[notice ]  [check_is_json_new] 12.7553 / 1
+[notice ]  [JSON] 13.2689 / 
+[notice ]  [addAgent] 13.2696 / 36
+[notice ]  [check_is_json_new] 13.2697 / 1
+[notice ]  [JSON] 13.7837 / 
+[notice ]  [addAgent] 13.7842 / 37
+[notice ]  [check_is_json_new] 13.7842 / 1
+[notice ]  [JSON] 14.0211 / 
+[notice ]  [addAgent] 14.0235 / 38
+[notice ]  [check_is_json_new] 14.0236 / 1
+[notice ]  [JSON] 14.3034 / 
+[notice ]  [JSON] 14.422 / 
+[notice ]  [JSON] 16.3747 / 
+[notice ]  [JSON] 16.4421 / 
+[notice ]  [JSON] 16.8427 / 
+[notice ]  [JSON] 18.2033 / 
+[notice ]  [JSON] 19.2958 / 
+[notice ]  [JSON] 19.5062 / 
+[notice ]  [JSON] 20.0453 / 
+[notice ]  [JSON] 21.14 / 
+[notice ]  [JSON] 21.5293 / 
+[notice ]  [JSON] 21.7222 / 
+[notice ]  [JSON] 21.8048 / 
+[notice ]  [JSON] 23.4182 / 
+[notice ]  [JSON] 23.4965 / 
+[notice ]  [JSON] 23.6491 / 
+[notice ]  [JSON] 23.7721 / 
+[notice ]  [JSON] 23.841 / 
+[notice ]  [JSON] 23.9227 / 
+[notice ]  [JSON] 24.1279 / 
+[notice ]  [JSON] 24.952 / 
+[notice ]  [JSON] 25.036 / 
+[notice ]  [JSON] 25.2359 / 
+[notice ]  [JSON] 26.098 / 
+[notice ]  [JSON] 27.0175 / 
+[notice ]  [JSON] 29.4257 / 
+[notice ]  [JSON] 30.1714 / 
+[notice ]  [JSON] 30.995 / 
+[notice ]  [JSON] 31.1602 / 
+[notice ]  [JSON] 31.6941 / 
+[notice ]  [JSON] 31.8823 / 
+[notice ]  [JSON] 33.5125 / 
+[notice ]  [JSON] 34.3749 / 
+[notice ]  [JSON] 35.1279 / 
+[notice ]  [JSON] 35.5711 / 
+[notice ]  [JSON] 36.59 / 
+[notice ]  [JSON] 37.8629 / 
+[notice ]  [JSON] 37.9602 / 
+[notice ]  [JSON] 38.7101 / 
+[notice ]  [JSON] 39.2348 / 
+[notice ]  [JSON] 41.6951 / 
+[notice ]  [JSON] 41.9224 / 
+[notice ]  [JSON] 42.611 / 
+[notice ]  [JSON] 42.9236 / 
+[notice ]  [JSON] 43.1343 / 
+[notice ]  [JSON] 43.6926 / 
+[notice ]  [JSON] 43.8089 / 
+[notice ]  [JSON] 44.1102 / 
+[notice ]  [JSON] 44.2356 / 
+[notice ]  [JSON] 45.1264 / 
+[notice ]  [JSON] 46.0172 / 
+[notice ]  [JSON] 46.6442 / 
+[notice ]  [JSON] 46.8505 / 
+[notice ]  [JSON] 47.0715 / 
+[notice ]  [JSON] 47.1819 / 
+[notice ]  [JSON] 47.3142 / 
+[notice ]  [JSON] 47.7189 / 
+[notice ]  [JSON] 47.9323 / 
+[notice ]  [JSON] 48.1729 / 
+[notice ]  [JSON] 48.3025 / 
+[notice ]  [JSON] 48.4476 / 
+[notice ]  [JSON] 48.6539 / 
+[notice ]  [JSON] 48.7748 / 
+[notice ]  [JSON] 48.8924 / 
+[notice ]  [JSON] 49.3647 / 
+[notice ]  [JSON] 49.5366 / 
+[notice ]  [JSON] 49.6663 / 
+[notice ]  [JSON] 49.9268 / 
+[notice ]  [JSON] 50.4752 / 
+[notice ]  [JSON] 50.6391 / 
+[notice ]  [JSON] 50.7658 / 
+[notice ]  [JSON] 51.3547 / 
+[notice ]  [JSON] 51.57 / 
+[notice ]  [JSON] 51.7974 / 
+[notice ]  [JSON] 52.1924 / 
+[notice ]  [JSON] 52.4382 / 
+[notice ]  [JSON] 52.7449 / 
+[notice ]  [JSON] 52.9189 / 
+[notice ]  [JSON] 53.522 / 
+[notice ]  [JSON] 53.7573 / 
+[notice ]  [JSON] 54.389 / 
+[notice ]  [JSON] 54.5477 / 
+[notice ]  [JSON] 54.7005 / 
+[notice ]  [JSON] 55.2995 / 
+[notice ]  [JSON] 55.9503 / 
+[notice ]  [JSON] 56.1147 / 
+[notice ]  [JSON] 57.5615 / 
+[notice ]  [JSON] 57.8 / 
+[notice ]  [JSON] 58.3078 / 
+[notice ]  [JSON] 58.5474 / 
+[notice ]  [JSON] 58.7029 / 
+[notice ]  [JSON] 58.9646 / 
+[notice ]  [JSON] 59.3099 / 
+[notice ]  [JSON] 59.4669 / 
+[notice ]  [JSON] 59.8181 / 
+[notice ]  [JSON] 59.969 / 
+[notice ]  [JSON] 60.1089 / 
+[notice ]  [JSON] 60.2598 / 
+[notice ]  [JSON] 60.7474 / 
+[notice ]  [JSON] 60.8964 / 
+[notice ]  [JSON] 61.0416 / 
+[notice ]  [JSON] 61.3048 / 
+[notice ]  [JSON] 61.9623 / 
+[notice ]  [JSON] 62.2101 / 
+[notice ]  [JSON] 62.3644 / 
+[notice ]  [JSON] 62.7027 / 
+[notice ]  [JSON] 62.9719 / 
+[notice ]  [JSON] 64.0962 / 
+[notice ]  [JSON] 64.7069 / 
+[notice ]  [JSON] 65.0464 / 
+[notice ]  [JSON] 65.4182 / 
+[notice ]  [JSON] 65.7135 / 
+[notice ]  [JSON] 65.8622 / 
+[notice ]  [JSON] 66.1736 / 
+[notice ]  [JSON] 66.3232 / 
+[notice ]  [JSON] 66.9871 / 
+[notice ]  [JSON] 67.1428 / 
+[notice ]  [JSON] 67.4121 / 
+[notice ]  [JSON] 68.2557 / 
+[notice ]  [JSON] 68.3927 / 
+[notice ]  [JSON] 68.6606 / 
+[notice ]  [JSON] 69.1331 / 
+[notice ]  [JSON] 69.3267 / 
+[notice ]  [JSON] 69.5221 / 
+[notice ]  [JSON] 69.8938 / 
+[notice ]  [JSON] 70.1777 / 
+[notice ]  [JSON] 70.3174 / 
+[notice ]  [JSON] 71.4216 / 
