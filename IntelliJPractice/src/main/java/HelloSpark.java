@@ -1,5 +1,5 @@
 /**
- * Created by hirokinaganuma on 2016/09/26.
+ * Created by hirokinaganuma on 2016/09/27.
  */
 
 import org.apache.spark.SparkConf;
@@ -17,10 +17,10 @@ import java.util.Arrays;
 public class HelloSpark {
 
     public static void main(String[] args) throws Exception {
-        String inputFile = args[0];
-        String outputFile = args[1];
+        String inputFile = "README.md";
+        String outputFile = "output.md";
         // Create a Java Spark Context.
-        SparkConf conf = new SparkConf().setAppName("wordCount");
+        SparkConf conf = new SparkConf().setAppName("wordCount").setMaster("local[2]").set("spark.executor.memory","1g");
         JavaSparkContext sc = new JavaSparkContext(conf);
         // Load our input data.
         JavaRDD<String> input = sc.textFile(inputFile);
