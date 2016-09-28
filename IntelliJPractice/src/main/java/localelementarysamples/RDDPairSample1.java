@@ -1,4 +1,4 @@
-package operationsamples.transition;
+package localelementarysamples;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
@@ -14,7 +14,7 @@ import java.util.Arrays;
 /**
  * Created by hirokinaganuma on 2016/09/28.
  */
-public class SpecialRDD {
+public class RDDPairSample1 {
     public static void main(String[] args) throws Exception {
         SparkConf conf = new SparkConf().setAppName("wordCount").setMaster("local[1]").set("spark.executor.memory","1g");
         JavaSparkContext sc = new JavaSparkContext(conf);
@@ -37,6 +37,7 @@ public class SpecialRDD {
             public Integer call(Integer x, Integer y){ return x+y;
             }
         });
+
         System.out.println(result.collect());
     }
 }
