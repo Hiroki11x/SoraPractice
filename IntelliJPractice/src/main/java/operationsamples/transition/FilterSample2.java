@@ -1,3 +1,5 @@
+package operationsamples.transition;
+
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -19,7 +21,7 @@ public class FilterSample2 {
         class ContainsNotice implements Function<String,Boolean>{
             public Boolean call(String str){return str.contains("notice");}
         }
-        
+
         JavaRDD<String> output = input.filter(new ContainsNotice());
         System.out.println(output.take(3));
     }

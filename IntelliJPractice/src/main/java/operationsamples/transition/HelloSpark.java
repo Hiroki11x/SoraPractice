@@ -1,4 +1,4 @@
-/**
+package operationsamples.transition; /**
  * Created by hirokinaganuma on 2016/09/27.
  */
 
