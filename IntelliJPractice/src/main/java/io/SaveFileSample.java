@@ -9,7 +9,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 public class SaveFileSample {
     public static void main(String[] args) throws Exception {
         String inputFile = "bin/data/*.json";//まとめて読み込むことも可能
-        String outputFile = "output01";
+        String outputPath = "result/output01";
         String master;
         if (args.length > 0) {
             master = args[0];
@@ -19,7 +19,7 @@ public class SaveFileSample {
         JavaSparkContext sc = new JavaSparkContext(master, "basicavg", System.getenv("SPARK_HOME"), System.getenv("JARS"));
         JavaRDD<String> input = sc.textFile(inputFile);
         JavaRDD<String> output = input.filter(s -> s.contains("\"text\":")).filter(s -> s.contains("笑"));
-        output.saveAsTextFile("result/output01");
+        output.saveAsTextFile(outputPath);
         sc.stop();
     }
 }
