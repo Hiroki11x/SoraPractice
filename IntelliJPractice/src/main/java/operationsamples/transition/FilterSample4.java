@@ -9,7 +9,7 @@ import org.apache.spark.api.java.JavaSparkContext;
  */
 public class FilterSample4 {
     public static void main(String[] args) throws Exception {
-        String inputFile = "twitter__litmon_.json";
+        String inputFile = "bin/data/*.json";//まとめて読み込むことも可能
         String outputFile = "output.md";
         // Create a Java Spark Context.
         SparkConf conf = new SparkConf().setAppName("wordCount").setMaster("local[2]").set("spark.executor.memory", "1g");
@@ -17,7 +17,7 @@ public class FilterSample4 {
         // Load our input data.
         JavaRDD<String> input = sc.textFile(inputFile);
         JavaRDD<String> errorLog = input.filter(s -> s.contains("メンヘラ"));
-        
+
         System.out.println("Search your recent 200 tweets");
         System.out.println("Number of tweets contains \"メンヘラ\": " +errorLog.count());
         System.out.println(errorLog.collect());
