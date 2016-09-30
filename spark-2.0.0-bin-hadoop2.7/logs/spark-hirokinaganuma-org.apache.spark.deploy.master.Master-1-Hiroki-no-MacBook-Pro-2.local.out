@@ -1,41 +1,22 @@
-Spark Command: /Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/jre/bin/java -cp /Users/hirokinaganuma/Desktop/SORACOM/Spark/spark-2.0.0-bin-hadoop2.7/conf/:/Users/hirokinaganuma/Desktop/SORACOM/Spark/spark-2.0.0-bin-hadoop2.7/jars/* -Xmx1g -XX:MaxPermSize=256m org.apache.spark.deploy.master.Master --host Hiroki-no-MacBook-Pro-2.local --port 7077 --webui-port 8080
+Spark Command: /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/bin/java -cp /Users/hirokinaganuma/Desktop/SORACOM/SoraPractice/spark-2.0.0-bin-hadoop2.7/conf/:/Users/hirokinaganuma/Desktop/SORACOM/SoraPractice/spark-2.0.0-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host Hiroki-no-MacBook-Pro-2.local --port 7077 --webui-port 8080
 ========================================
 Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
-16/09/09 10:04:16 INFO Master: Started daemon with process name: 2629@Hiroki-no-MacBook-Pro-2.local
-16/09/09 10:04:16 INFO SignalUtils: Registered signal handler for TERM
-16/09/09 10:04:16 INFO SignalUtils: Registered signal handler for HUP
-16/09/09 10:04:16 INFO SignalUtils: Registered signal handler for INT
-16/09/09 10:04:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16/09/09 10:04:17 INFO SecurityManager: Changing view acls to: hirokinaganuma
-16/09/09 10:04:17 INFO SecurityManager: Changing modify acls to: hirokinaganuma
-16/09/09 10:04:17 INFO SecurityManager: Changing view acls groups to: 
-16/09/09 10:04:17 INFO SecurityManager: Changing modify acls groups to: 
-16/09/09 10:04:17 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hirokinaganuma); groups with view permissions: Set(); users  with modify permissions: Set(hirokinaganuma); groups with modify permissions: Set()
-16/09/09 10:04:17 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
-16/09/09 10:04:18 INFO Master: Starting Spark master at spark://Hiroki-no-MacBook-Pro-2.local:7077
-16/09/09 10:04:18 INFO Master: Running Spark version 2.0.0
-16/09/09 10:04:18 INFO Utils: Successfully started service 'MasterUI' on port 8080.
-16/09/09 10:04:18 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://192.168.1.20:8080
-16/09/09 10:04:18 INFO Utils: Successfully started service on port 6066.
-16/09/09 10:04:18 INFO StandaloneRestServer: Started REST server for submitting applications on port 6066
-16/09/09 10:04:18 INFO Master: I have been elected leader! New state: ALIVE
-16/09/09 10:05:56 INFO Master: Registering worker 192.168.1.20:61247 with 4 cores, 7.0 GB RAM
-16/09/09 10:08:53 INFO Master: Registering app Spark shell
-16/09/09 10:08:53 INFO Master: Registered app Spark shell with ID app-20160909100853-0000
-16/09/09 10:08:53 INFO Master: Launching executor app-20160909100853-0000/0 on worker worker-20160909100555-192.168.1.20-61247
-16/09/09 15:50:12 INFO Master: Received unregister request from application app-20160909100853-0000
-16/09/09 15:50:12 INFO Master: Removing app app-20160909100853-0000
-16/09/09 15:50:12 INFO Master: 192.168.1.20:61262 got disassociated, removing it.
-16/09/09 15:50:12 INFO Master: 192.168.1.20:61261 got disassociated, removing it.
-16/09/09 15:50:12 WARN Master: Got status update for unknown executor app-20160909100853-0000/0
-16/09/09 16:12:15 INFO Master: Registering app Spark shell
-16/09/09 16:12:15 INFO Master: Registered app Spark shell with ID app-20160909161215-0001
-16/09/09 16:12:15 INFO Master: Launching executor app-20160909161215-0001/0 on worker worker-20160909100555-192.168.1.20-61247
-16/09/09 16:13:00 INFO Master: Received unregister request from application app-20160909161215-0001
-16/09/09 16:13:00 INFO Master: Removing app app-20160909161215-0001
-16/09/09 16:13:00 INFO Master: 192.168.1.20:63536 got disassociated, removing it.
-16/09/09 16:13:00 INFO Master: 192.168.1.20:63535 got disassociated, removing it.
-16/09/09 16:13:00 WARN Master: Got status update for unknown executor app-20160909161215-0001/0
-16/09/10 00:28:01 WARN Master: Removing worker-20160909100555-192.168.1.20-61247 because we got no heartbeat in 60 seconds
-16/09/10 00:28:02 INFO Master: Removing worker worker-20160909100555-192.168.1.20-61247 on 192.168.1.20:61247
-16/09/12 15:30:33 ERROR Master: RECEIVED SIGNAL TERM
+16/09/30 16:39:08 INFO Master: Started daemon with process name: 6861@Hiroki-no-MacBook-Pro-2.local
+16/09/30 16:39:08 INFO SignalUtils: Registered signal handler for TERM
+16/09/30 16:39:08 INFO SignalUtils: Registered signal handler for HUP
+16/09/30 16:39:08 INFO SignalUtils: Registered signal handler for INT
+16/09/30 16:39:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/09/30 16:39:09 INFO SecurityManager: Changing view acls to: hirokinaganuma
+16/09/30 16:39:09 INFO SecurityManager: Changing modify acls to: hirokinaganuma
+16/09/30 16:39:09 INFO SecurityManager: Changing view acls groups to: 
+16/09/30 16:39:09 INFO SecurityManager: Changing modify acls groups to: 
+16/09/30 16:39:09 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hirokinaganuma); groups with view permissions: Set(); users  with modify permissions: Set(hirokinaganuma); groups with modify permissions: Set()
+16/09/30 16:39:09 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+16/09/30 16:39:09 INFO Master: Starting Spark master at spark://Hiroki-no-MacBook-Pro-2.local:7077
+16/09/30 16:39:09 INFO Master: Running Spark version 2.0.0
+16/09/30 16:39:10 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+16/09/30 16:39:10 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://192.168.1.20:8080
+16/09/30 16:39:10 INFO Utils: Successfully started service on port 6066.
+16/09/30 16:39:10 INFO StandaloneRestServer: Started REST server for submitting applications on port 6066
+16/09/30 16:39:10 INFO Master: I have been elected leader! New state: ALIVE
+16/09/30 16:42:53 ERROR Master: RECEIVED SIGNAL TERM
