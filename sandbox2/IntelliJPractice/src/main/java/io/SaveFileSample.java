@@ -9,7 +9,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 public class SaveFileSample {
     public static void main(String[] args) throws Exception {
         String inputFile = "bin/data/*.json";//まとめて読み込むことも可能
-        String outputPath = "result/output01";
+        String outputPath = "result/output03";
         String master;
         if (args.length > 0) {
             master = args[0];
