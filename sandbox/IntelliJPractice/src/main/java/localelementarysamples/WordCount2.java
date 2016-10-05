@@ -16,7 +16,7 @@ import java.util.Arrays;
  */
 public class WordCount2 {
     public static void main(String[] args) throws Exception {
-        SparkConf conf = new SparkConf().setAppName("wordCount").setMaster("local[1]").set("spark.executor.memory","1g");
+        SparkConf conf = new SparkConf().setAppName("wordCount").setMaster("local").set("spark.executor.memory","1g");
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> rdd = sc.textFile("README.md");
         JavaRDD<String> words = rdd.flatMap(
