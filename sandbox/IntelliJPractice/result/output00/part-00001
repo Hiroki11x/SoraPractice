@@ -1,0 +1,60 @@
+    使いたい場面、 CUDA よくわからん、GPUよくわからんって言う人にはおすすめ。 
+    ぶちょう登場。「わからない」「作って」 という流れで最適化戦略をすることに。  
+    Irayセッションは次のセッションと入れ替わりとのこと 
+     Tesla K80安い！買えない  https://t.co/KPGhuIEWTJ
+    RT @ta9mar: JetsonTX1安い！けど個人で買うには厳しい値段(-｡-;  https://t.co/QeJCRs1qpy
+    RT @NeiloTakHirai: NVIDIA様のGTC Japan 2016に来ています。「電車でGO！！」筐体を置いて頂き感無量です。#NVIDIAJapan  https://t.co/wJFguObUbY
+    予定した内容は終了ｗｗｗｗｗはやすぎわろた 
+       icmp
+    2Dの波動方程式で波のシミュレーション。\nインパルスを初期値にして、境界で反射するケースを、スペクトル法でやるもの。\n非GPUのコードと、GPUコードとでほぼ同じコード。 
+     NVIDIA様のGTC Japan 2016に来ています。「電車でGO！！」筐体を置いて頂き感無量です。#NVIDIAJapan  https://t.co/wJFguObUbY
+    どの部屋も寒い(~_~;) 
+     deep learningではdomain expertはいないという話。データから学ぶのだ、と。
+     one algorithm classifies normal abnormal edge.
+    MATLABで始めるGPUコンピューティング  ペガサスA
+    現地名産の建築素材を使うというスタンスすごい 
+    RT @ta9mar: 水も配ってた。別のイベントで貰ったペットボトルホルダーが活躍してます  https://t.co/F9bhlEocqI
+     12GBのtesla k80がazureにはいっているみたい. https://t.co/7l6Dp8CJQC K80は24GBだけど、K80ってnvidia-smiで出ているのに、12GBしか認識していない。K40が12GBみたいだが。。。
+    RT @shunk031: GPUソフトクリーム貰いました！  https://t.co/zmBC8hfHHf
+    ペガサスB立ち見！満員すぎ  https://t.co/O4uteMKdiA
+    壁に和紙。ソファーに紬 
+    CNNライブラリはデフォでGPU利用。むしろないと学習できないとな。 
+    ペガサスA、OpenACCとOpenMPの話。簡単にGPU使えて並列処理できるならこれ使いたいな。  https://t.co/0TGUEAp87d
+    英語スピーチだけどスライド日本語で助かった！  https://t.co/ujIRSn02Cv
+    すごく簡単すぎてがっかりされちゃうかもとなｗｗｗ 
+    長岡市役所は土間をイメージして、屋根のある自遊空間を市役所敷地内に設けた。杉とガラスがメイン 
+       NVIDIAJapan
+    RT @rescalejapan: GTC Japan での当社長尾のセッション「クラウドHPCではじめるDeep Learning」はこの後18:05よりアポロンBで行われます。\n参加者には5000円分のRescale利用クーポンを差し上げます。\n
+    RT @hidenorly:  コーヒーだけは用意して欲しかった
+    MATLABは科学技術計算用の統合環境。元は行列演算ライブラリー。この裏のライブラリーをCUDAにしちゃう話 
+    ノートPCのGPUでもめっさ早くなるよ。MATLABなら超簡単に！ホントにあっさりしててすごい 
+     JetsonTX1安い！けど個人で買うには厳しい値段(-｡-;  https://t.co/QeJCRs1qpy
+    デジタルソリューションを活用した新しい建築設計、開始 
+     auto encodier. encoder-&gt; sprase expression -&gt; decoder -&gt; reconfiigure (to input again)
+     NVIDIAグリーン味のGPUソフトクリーム再び！  https://t.co/LzMApbhkdO
+    step2 acc loop とacc parallel でループやコードを再構成。このあたりからコードの中身をACCコンパイラにちゃんと渡す。OpenACCの知識が必要になってくる。  
+     ノートPCのGPUでもめっさ早くなるよ。MATLABなら超簡単に！ホントにあっさりしててすごい 
+       フィギュア川柳
+     NV = Tesla M60 OpenGL&amp;DiectX NC=K80 : CUA&amp;OpenCL https://t.co/lSIrwy3kEA https://t.co/joXlwIK6m1 https://t.co/elFZZhyEPH
+    同僚の物理屋さんの書いたFORTRANのコードを最適化してみる。  
+    LenovoブースではNVIDIA GRIDを使ったCAD on VDIがご体験できます  https://t.co/1rSHXrhpIQ
+    Loop構文、Parallel 構文、Data構文がある。Loop構文は楽ちん、Parallel は内部を使う人が気をつける必要がある。  
+     deep learning in industrial automation. automation safety operation etc....
+        NVIDIAJapan
+    ネットワークでヒストグラムを作るのに、大体471ms程度。　ヒストグラムとしては5人目で到達する人数が最大となる。
+    The latest ライアン帝國新報! https://t.co/cnTL2gELWX Thanks to @charl_folife @h_hiro_ @narihira1125  #icmp
+    RT @ta9mar: Tesla K80安い！買えない  https://t.co/KPGhuIEWTJ
+    アポロンA会場は1046と1047をセッション入れ替え 
+      コーヒーだけは用意して欲しかった
+     ネットワークでヒストグラムを作るのに、大体471ms程度。　ヒストグラムとしては5人目で到達する人数が最大となる。
+     コーヒーだけは用意して欲しかった
+    step 1 acc kernels を追加する。  
+    Tesla K80安い！買えない  https://t.co/KPGhuIEWTJ
+     水も配ってた。別のイベントで貰ったペットボトルホルダーが活躍してます  https://t.co/F9bhlEocqI
+    RT @tomoaki_teshima: ネットワークでヒストグラムを作るのに、大体471ms程度。　ヒストグラムとしては5人目で到達する人数が最大となる。
+    step 5 ライブラリや自作CUDA kernel を結合。  
+    RT @ta9mar: NVIDIAグリーン味のGPUソフトクリーム再び！  https://t.co/LzMApbhkdO
+    今度は５重ループが入ってる関数。面倒くさそうだ。  
+    第２段階OpenACCと、並列コンピューティングの知識が必要になる。CUDAの知識は必要ない。 第３段階ではバリバリ最適化もしていくので、CUDA、GPUの知識が必要。  
+     Microsoftのopen sourceのcomputational network toolkit (CNTK) https://t.co/ejRkxJBcmW
+       アドビデジマ

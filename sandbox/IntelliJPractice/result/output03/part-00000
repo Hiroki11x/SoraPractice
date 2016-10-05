@@ -1,0 +1,86 @@
+    使いたい場面、 CUDA よくわからん、GPUよくわからんって言う人にはおすすめ。 
+     Microsoftのopen sourceのcomputational network toolkit (CNTK) https://t.co/ejRkxJBcmW
+    いま話題のワード：シンハライト / 法人化 /  / バスタ新宿 / 各球団の狙い / Knightsガチャ / 岡江久美子 初孫 / 野党4党 / トイズワークスコレクション / 第三者委員会 / #フィギュア川柳
+    CPUで試して、GPUに簡単に持っていける。このメリットはデカい 
+    step 1 acc dataでデータ転送の量と回数を低減する 
+    MATLAB警告出しすぎててこれデモとして大丈夫なの 
+    RT @ta9mar: JetsonTX1安い！けど個人で買うには厳しい値段(-｡-;  https://t.co/QeJCRs1qpy
+    RT @hidenorly:  cloud側で、GPU使えるserverがあるので、cadでremoteでrenderingして結果を受け取れる (remote desktopのはなし)
+    step 5 ライブラリや自作CUDA kernel を結合。  
+    R-CNN(Regions with CNN features)：どこに、何が写っているかを認識する 
+    MATLAB、関数の前後でメモリ転送するだけでGPU使える。CUDA知らなくても速く出来るのか、重い数値計算させるなら便利そう。  https://t.co/kcM3y9PTnu
+    予定した内容は終了ｗｗｗｗｗはやすぎわろた 
+    RT @NeiloTakHirai: NVIDIA様のGTC Japan 2016に来ています。「電車でGO！！」筐体を置いて頂き感無量です。#NVIDIAJapan  https://t.co/wJFguObUbY
+    Irayセッション待ち 
+     GPUソフトクリーム貰いました！  https://t.co/zmBC8hfHHf
+    2Dの波動方程式で波のシミュレーション。\nインパルスを初期値にして、境界で反射するケースを、スペクトル法でやるもの。\n非GPUのコードと、GPUコードとでほぼ同じコード。 
+     NVIDIA様のGTC Japan 2016に来ています。「電車でGO！！」筐体を置いて頂き感無量です。#NVIDIAJapan  https://t.co/wJFguObUbY
+    えびすていめい様 nvGraph  https://t.co/nFB511nnZf
+     OpenACC の紹介。 OpenMP の GPU 版という理解。基本的にCUDA を書かなくて良い。  
+     mathworksのおおた様お呼びだし案内
+    step 3 gang vector でマッピングとスケジューリング  
+    SuperMicroさんの発表、きちんとデバイス間の接続トポロジーを明記していて好感が持てる。 
+     cloud側で、GPU使えるserverがあるので、cadでremoteでrenderingして結果を受け取れる (remote desktopのはなし)
+    あっはい 
+    MATLABで始めるGPUコンピューティング  ペガサスA
+    OpenACC の紹介。 OpenMP の GPU 版という理解。基本的にCUDA を書かなくて良い。  
+    Softek さんのOpenACCの情報を抜粋。日英合わせて一番良く説明されていた。  
+    RT @ta9mar: 水も配ってた。別のイベントで貰ったペットボトルホルダーが活躍してます  https://t.co/F9bhlEocqI
+     NVIDIAさんのGPU Technology Conference、NVIDIAのイベントなのでGTX 1080搭載機こと『電車でGO!!』は当然出ております。よく運んだな……  https://t.co/xoYvlcSMMs
+     12GBのtesla k80がazureにはいっているみたい. https://t.co/7l6Dp8CJQC K80は24GBだけど、K80ってnvidia-smiで出ているのに、12GBしか認識していない。K40が12GBみたいだが。。。
+    ペガサスAに移動。MATLABで始めるGPUコンピューティング  https://t.co/7wuKu7Mi8V
+    俺、このままセッション受講中に凍死するかも。 
+    RT @shunk031: GPUソフトクリーム貰いました！  https://t.co/zmBC8hfHHf
+    CNNライブラリはデフォでGPU利用。むしろないと学習できないとな。 
+    全部で３段階７ステップがある。第１段階はOpenMP、OpenACCの知識も要らない。ディレクティブを入れるだけ。  
+    step 6 pgprof でプロファイリング、実装の理解  
+    RT @Shingi: NVIDIAさんのGPU Technology Conference、NVIDIAのイベントなのでGTX 1080搭載機こと『電車でGO!!』は当然出ております。よく運んだな……  https://t.co/xoYvlcSMMs
+    step 4 acc routine で自作関数を実装  
+    すごく簡単すぎてがっかりされちゃうかもとなｗｗｗ 
+       NVIDIAJapan
+    RT @it__ssei: ノートPCのGPUでもめっさ早くなるよ。MATLABなら超簡単に！ホントにあっさりしててすごい 
+       水内貴士
+    RT @hidenorly:  コーヒーだけは用意して欲しかった
+     nvGraph では基本的に有向グラフを取り扱う。なので無向グラフを取り扱うときは各エッジを、行きと帰りで２つつなぐ。  
+    RT @tomoaki_teshima: nvGraph では基本的に有向グラフを取り扱う。なので無向グラフを取り扱うときは各エッジを、行きと帰りで２つつなぐ。  
+    関数にuseGPUオプションが付いてるｗｗｗ 
+     JetsonTX1安い！けど個人で買うには厳しい値段(-｡-;  https://t.co/QeJCRs1qpy
+    ノートPCのGPUでもめっさ早くなるよ。MATLABなら超簡単に！ホントにあっさりしててすごい 
+        gtcjapan
+       gtcjapan
+    警告：イメージが大きすぎて画面に収まりません。33％で表示します。 
+       GTCjapan
+    MATLABは科学技術計算用の統合環境。元は行列演算ライブラリー。この裏のライブラリーをCUDAにしちゃう話 
+    step2 acc loop とacc parallel でループやコードを再構成。このあたりからコードの中身をACCコンパイラにちゃんと渡す。OpenACCの知識が必要になってくる。  
+     ノートPCのGPUでもめっさ早くなるよ。MATLABなら超簡単に！ホントにあっさりしててすごい 
+     NVIDIAグリーン味のGPUソフトクリーム再び！  https://t.co/LzMApbhkdO
+       フィギュア川柳
+     NV = Tesla M60 OpenGL&amp;DiectX NC=K80 : CUA&amp;OpenCL https://t.co/lSIrwy3kEA https://t.co/joXlwIK6m1 https://t.co/elFZZhyEPH
+    同僚の物理屋さんの書いたFORTRANのコードを最適化してみる。  
+    LenovoブースではNVIDIA GRIDを使ったCAD on VDIがご体験できます  https://t.co/1rSHXrhpIQ
+      cloud側で、GPU使えるserverがあるので、cadでremoteでrenderingして結果を受け取れる (remote desktopのはなし)
+     Deep learning applications for IoT
+        NVIDIAJapan
+       懲戒免職
+    GTC Japan での当社長尾のセッション「クラウドHPCではじめるDeep Learning」はこの後18:05よりアポロンBで行われます。\n参加者には5000円分のRescale利用クーポンを差し上げます。\n
+     Remote Desktop services OpenGL/CL support
+       GTCJapan
+    #懲戒免職 #水内貴士 #アドビデジマ  ゴシップガールズ : 妻以外６人と交際した警官の女性殺害 府警責任問う遺族 https://t.co/kUhbK3Luws https://t.co/nIFHAy6fXa
+    近年注目のMPS法。粒子法。 各仮想粒子はバラバラに計算できるので、並列度が非常に高い  
+    Loop構文、Parallel 構文、Data構文がある。Loop構文は楽ちん、Parallel は内部を使う人が気をつける必要がある。  
+      コーヒーだけは用意して欲しかった
+    ネットワークでヒストグラムを作るのに、大体471ms程度。　ヒストグラムとしては5人目で到達する人数が最大となる。
+     ネットワークでヒストグラムを作るのに、大体471ms程度。　ヒストグラムとしては5人目で到達する人数が最大となる。
+     コーヒーだけは用意して欲しかった
+        GTCjapan
+    step 1 acc kernels を追加する。  
+    100万人がそれぞれ２０人と知り合いだったとして、友達の友達がどれ位いるか、ヒストグラムを作ってみる。  
+     水も配ってた。別のイベントで貰ったペットボトルホルダーが活躍してます  https://t.co/F9bhlEocqI
+    RT @tomoaki_teshima: ネットワークでヒストグラムを作るのに、大体471ms程度。　ヒストグラムとしては5人目で到達する人数が最大となる。
+    RT @ta9mar: NVIDIAグリーン味のGPUソフトクリーム再び！  https://t.co/LzMApbhkdO
+    第２段階OpenACCと、並列コンピューティングの知識が必要になる。CUDAの知識は必要ない。 第３段階ではバリバリ最適化もしていくので、CUDA、GPUの知識が必要。  
+        GTCJapan
+    今度は５重ループが入ってる関数。面倒くさそうだ。  
+    ぶちょう登場。「わからない」「作って」 という流れで最適化戦略をすることに。  
+    RT @tomoaki_teshima: OpenACC の紹介。 OpenMP の GPU 版という理解。基本的にCUDA を書かなくて良い。  
+       アドビデジマ

@@ -19,8 +19,7 @@ public class Accumulator01 {
             master = "local";
         }
         JavaSparkContext sc = new JavaSparkContext(master, "basicavg", System.getenv("SPARK_HOME"), System.getenv("JARS"));
-
-        JavaRDD<String> rdd = sc.textFile("bin/inputdata/README.md");
+        JavaRDD<String> rdd = sc.textFile("bin/input/README.md");
 
 
         final Accumulator<Integer> blankLines = sc.accumulator(0);
@@ -35,7 +34,7 @@ public class Accumulator01 {
                     }
                 }
         );
-        callSigns.saveAsTextFile("bin/outputdata/output.txt");
+        callSigns.saveAsTextFile("bin/output/output.txt");
         System.out.println("Blank lines: "+blankLines.value());
     }
 }
