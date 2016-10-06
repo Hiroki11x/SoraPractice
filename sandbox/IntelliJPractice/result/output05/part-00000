@@ -1,0 +1,26 @@
+今日やったこと
+ROLLBACK_COMPLETE	AWS::CloudFormation::Stack
+http://kimutansk.hatenablog.com/entry/20131104/1383496192
+明日は第5章(データとロードのセーブ)、
+jettyのバーションの関係でサンプルが実行できなかった
+     / __/__  ___ _____/ /__
+#次回からやること
+10/6(木)におぐさんとやまんさんにSpark,Mesosの調査について発表させてもらうので、
+研究室のサーバーが今動いてないので動いたらmaster(1)-slave(1or2)程度で試せるかもです。
+6. SORACOM Funnel(コンソール版)のAWS設定の最後の方の
+Mesos開発の最初の環境構築がちょいめんどい？
+http://mesos.apache.org/gettingstarted/
+
+サーバーに分散して投げる
+Azureとかの認証情報をhogeみたいな名前(概要、認証情報 ID共に同じ)でSORACOM Funnel 設定で登録していて
+しゅんにもやってもらいましたがわかんなかったです😥
+クラスタ起動の際の話
+$SPARK_HOME/bin/spark-submit \
+土日も読み進めていたが今日までで第1,2章は読了。
+第9章(SparkSQL),第9章(SparkSQL),第10章(SparkStreaming),第11章(MLibを使った機械学習)で終わりですが9章以降は一旦飛ばしてMesosとかその辺りをしようと思います。
+1. https://dev.soracom.io/jp/start/canal/#step1の
+http://www.slideshare.net/AdvancedTechNight/twitterstorm
+# 次回やること
+##IntelliJでSparkチュートリアル
+soracom version
+```

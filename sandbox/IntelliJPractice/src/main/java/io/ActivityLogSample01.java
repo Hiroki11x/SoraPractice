@@ -4,11 +4,11 @@ import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
 /**
- * Created by hirokinaganuma on 2016/09/29.
+ * Created by hirokinaganuma on 2016/10/06.
  */
-public class SaveFileSample {
+public class ActivityLogSample01 {
     public static void main(String[] args) throws Exception {
-        String inputFile = "bin/data/*.json";//まとめて読み込むことも可能
+        String inputFile = "../../../ActivityLog/*.md";//まとめて読み込むことも可能
         String outputPath = "result/output05";
         String master;
         if (args.length > 0) {
@@ -16,16 +16,11 @@ public class SaveFileSample {
         } else {
             master = "local";
         }
+
         JavaSparkContext sc = new JavaSparkContext(master, "basicavg", System.getenv("SPARK_HOME"), System.getenv("JARS"));
         JavaRDD<String> input = sc.textFile(inputFile);
-        JavaRDD<String> output = input.filter(s -> s.contains("\"text\":"))
-                .map(s->s.replaceAll("#GTCJapan",""))
-                .map(s->s.replaceAll("#GTCjapan",""))
-                .map(s->s.replaceAll("#gtcjapan",""))
-                .map(s->s.replaceAll("\"text\":",""))
-                .map(s->s.replaceAll("\"",""))
-                .map(s->s.replaceAll(",",""))
-                .distinct();
+        //System.out.println("hoge");みたいなのが何回呼ばれるか調べる
+        JavaRDD<String> output = input.filter(s->s.contains("Spark")).distinct();
         output.saveAsTextFile(outputPath);
         System.out.println(output);
         sc.stop();

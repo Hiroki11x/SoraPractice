@@ -1,0 +1,19 @@
+Standaloneクラスタマネージャ
+Apache Spark 入門的な本があるので、それをしっかり読まなきゃなと思いました
+Spark context available as 'sc' (master = local[*], app id = local-1475712775321).
+successってでるけどWebUIで確認できないことも、、
+#Apache Spark入門 動かして学ぶ最新並列分散処理フレームワーク
+その認証情報をセキュリティーから削除、その後同じhogeって名前で印象情報を登録し直すと、保存ができなくなる
+WebUIに関するデバッグをしていましたが、まだつかめていません。。
+   /___/ .__/\_,_/_/ /_/\_\   version 2.0.0
+http://qiita.com/rtoya/items/d80e59371832877fbbb1
+また、PairRDDのサンプルを多く作りました。
+はじめに
+AWSでSpark動かせるようにしました。ただあんまりインスタンスたてまくるのが怖いので一つしかたててないです。
+https://dev.soracom.io/jp/start/
+Endorseユーザーデータの利用に関して
+- https://dev.soracom.io/jp/start/ 試す
+##Apache Spark の RDDs に関するスライドを読む
+まず、AWS マネジメントコンソールにて、以下のポート/プロトコルで通信ができるよう Gate Peer の EC2 セキュリティグループの設定を行います。
+> Apache Mesosの 環境構築 & Getting Started的なやつ
+JacksonによるJSON周りの処理,opencsvのCSV処理

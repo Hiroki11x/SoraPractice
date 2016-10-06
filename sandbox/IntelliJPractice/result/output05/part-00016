@@ -1,0 +1,19 @@
+> Apache Hadoopの概要をさらっと見る(Apache Sparkとの違い的な)
+Qiitaにまとめたのがほとんどです。
+の最後
+    _\ \/ _ \/ _ `/ __/  '_/
+#O'Reillyの初めてのSpark 続き
+> Apache Spark の導入事例的な
+      ____              __
+PBsとかオブジェクトファイル、SequenceFileについてとか10種類くらい
+> https://dev.soracom.io/jp/start/ 試す
+の部分が今はVPGの作成に名前ごと変わってるので戸惑うかも
+http://www.slideshare.net/InsightTechnology/dbts-tokyo-2016-b31-spark-nihon-denshin-denwa
+Funnel を通じて利用する各種クラウドサービスの認証情報は、クレデンシャルストア機能を利用します。
+AWS マネジメントコンソールで Gate Peer の送信元/送信先チェックを外します。
+http://www.intellilink.co.jp/article/column/bigdata-kk01.html
+scala -> sbt
+AWS マネジメントコンソールでの設定
+SORACOM Funnel(Azure Event Hubs)
+一応解決したがWebUIが見れないのはspark-submit使っているから？！(要調査)
+http://stackoverflow.com/questions/26897543/java-eclipse-dependency-errors-with-spark

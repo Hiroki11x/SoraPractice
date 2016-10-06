@@ -1,0 +1,18 @@
+Using Scala version 2.11.8 (OpenJDK 64-Bit Server VM, Java 1.7.0_111)
+http://stackoverflow.com/questions/31683306/running-java-spark-with-intellij
+##Spring Boot の Getting Started
+に関して読んでいって気になったポイントSIMがなかったので実際にできていないところもあります)
+OSXでの接続テスト、環境構築など
+Hadoopの入出力について(Sparkも)
+Type in expressions to have them evaluated.
+できたけどログ吐けないとか言われた
+##O'Reillyの初めてのSpark
+データの圧縮について少し加えました。
+Subscriber
+Twitterの適当なTweetを持ってきていろいろ遊んでみました(誰がどういうワードをどのくらい言ってるとか)
+の現時点でというのはいつ？
+http://www.shoeisha.co.jp/book/detail/9784798142661
+今のロジックを生かしつつ分散できればという感じ
+IntelliJでのsandboxが増えました
+##MesosとYARNについて
+で、いきなり`AWS Access Key ID`、`AWS Secret Access Key`出てくるので導入が欲しい

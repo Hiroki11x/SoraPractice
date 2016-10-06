@@ -1,0 +1,20 @@
+次に、Kinesis Firehose にアクセスする IAM ユーザーを作成します。 AWS の IAM Management Console で、既存のユーザーもしくは、新規にユーザーを作成し、ポリシーをアタッチします。 以下では、Full Access をアタッチしています。
+--class com.oreilly.learningsparkexamples.mini.java.WordCount \
+Getting Started...
+認証情報 ID は、Funnel サービスから指定する当認証情報のIDです。
+で引っかかったやつをいろいろ読みつつQiitaにまとめました
+TwitterのTweet解析、その書き出し
+## 次回やること
+1.
+http://d.hatena.ne.jp/miyakawa_taku/20130319/1363714318
+それまでには、Spark,Mesosの概要、それをどう組み込めるかの紹介
+みたいなことをするっぽいけど今のAWSのユーザコンソールみたいなのからどうするのかわからない
+大学のスパコンだと、既に色々設定されてあって/etc/hostsとかいじれなくてどうしようってなりました
+21:10-26:25までWFHしました
+SparkのIntelliJでのsandboxが増えました
+Apacth Spark 分散処理
+「AWS Access Key ID」、「AWS Secret Access Key」は、先ほど設定した IAM ユーザーの情報を入力してください。
+Event Hubs サービスを追加しますのUIが(僕が無料試用枠で使ってるからなのか？)全然違う
+まだ二、三記事しか読んでませんが、
+第6章(Sparkの高度なプログラミング)あたりを習得したいです。
+hiroki11x@yokota01:~/workdir/spark/spark-2.0.0-bin-hadoop2.7/bin$

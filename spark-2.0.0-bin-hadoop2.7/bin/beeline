@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
@@ -15,5 +17,16 @@
 # limitations under the License.
 #
 
-# A Spark Worker will be started on each of the machines listed below.
-hiroki11x@yokota01
+#
+# Shell script for starting BeeLine
+
+# Enter posix mode for bash
+set -o posix
+
+# Figure out if SPARK_HOME is set
+if [ -z "${SPARK_HOME}" ]; then
+  export SPARK_HOME="$(cd "`dirname "$0"`"/..; pwd)"
+fi
+
+CLASS="org.apache.hive.beeline.BeeLine"
+exec "${SPARK_HOME}/bin/spark-class" $CLASS "$@"

@@ -1,0 +1,10 @@
+SORACOM Endorse
+Setting default log level to "WARN".
+0. 全体的にユーザコンソールのUIが違う(更新されている、しょうがないか)
+##Apache Spark のもう少し概要を抑えた記事を読む
+-> IntelliJでやるとできた(ただログが出ずWebUIで見ている状態なう)
+第7章(クラスタでの動作)に入りました。
+(SparkをちゃんとできないとMesos入りづらいのでまずはSparkから)
+認証情報を登録します。
+ここが肝っぽいので慎重に進めてます。
+12:55-16:20までWFHしました

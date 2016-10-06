@@ -1,0 +1,11 @@
+2.
+第7章(クラスタでの動作)が終わり、第8章(Sparkのチューニングとデバッグ)をさらっとしました
+POST の場合
+第7章(クラスタでの動作)あたりを習得したいです。
+##Apache Mesosの 環境構築 & Getting Started的なやつの残り
+##Apache Sparkについての Qiitaで記事の更新(まだ途中)
+Tipsを追加しました。
+java -> Maven
+ダッシュボードの開き方わからなかったので(UI的に)実際にデータがAzureで受け取られてるのかちゃんと見れてないです
+``Learning Spark`` 読書会のスライド等
+あとSparkContextのmasterがどうのって怒られた

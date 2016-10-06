@@ -1,0 +1,29 @@
+あと、Java8使えないとJava冗長になるなと思いました
+そのAWSでうまくいかなかったとこについてメモとして限定共有投稿で残しました
+SORACOM SDK for Ruby(https://dev.soracom.io/jp/tools/ruby/)
+Event Hubs のダッシュボードを確認して、データが送信されたことを確認します。 「メッセージ」を確認することで、送信されていることがわかります。
+#"Apache Mesos のQiita記事を書く(まとめの意味も込めて)"
+http://libro.tuyano.com/index3?id=6196003
+今日はかなり更新できました！！
+AWS課金すると高そうだし、どうしようかなと思ってます。
+##O'Reillyの初めてのSpark 続き
+#O'Reillyの初めてのSpark
+##Apache Spark の導入事例的なのを読む
+5. Funnel
+To adjust logging level use sc.setLogLevel(newLevel).
+リアルタイム性はそんなに使わないからあんま深くしなくても良さそう？！
+accumulaterとかのサンプルを増やしました。
+http://www.techscore.com/tech/Java/ApacheJakarta/Maven/1/#maven-1-2
+今日はRDDに関するところとパーティションに関して更新しました。
+http://blog.livedoor.jp/sonots/archives/35421955.html
+https://dev.soracom.io/jp/start/console/
+#Apache Mesosの 環境構築 & Getting Started的なやつの残り
+3.
+./target/learning-spark-mini-example-0.0.1.jar \
+#Apache Sparkについての Qiitaで記事の更新(まだ途中)
+の「送信元/送信先チェックを無効にする」のリンクが404 Not Found
+を終えました。第6章まで進めませんでした＞＜
+SORACOM Gate
+最終成果物はjarファイル一つだけ
+データの送信を確認する
+SORACOM Beam

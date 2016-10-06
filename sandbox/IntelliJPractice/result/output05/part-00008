@@ -1,0 +1,19 @@
+また圧縮に関してもやりました
+の部分で、`「AWS Access Key ID」`、`「AWS Secret Access Key」`をいつ作成したのかわからない。
+# 次回以降やること
+##IntelliJで開発できるように(今まではテキストエディタとターミナルだった)
+http://www.cloudera.co.jp/blog/putting-spark-to-use-fast-in-memory-computing-for-your-big-data-applications.html
+画面上部のメニューから「閉域網接続」を選択します。
+ルートテーブルを選択
+##Spark InteractiveではなくStandaloneでやろうとしてみた
+http://kimutansk.hatenablog.com/entry/20130901/1378023152
+#Maven Spark Mesos SpringBoot の練習レポジトリ
+https://sparktutorials.github.io/2015/04/02/setting-up-a-spark-project-with-maven.html
+hiroki11x@yokota01:~/workdir/spark/spark-2.0.0-bin-hadoop2.7/bin$ ./spark-shell
+じゃなくて
+最後にREDUCEして読み込む
+7. Gate
+グループの設定変更に関して
+各タブでは、以下の設定ができます。
+http://www.oracle.com/webfolder/technetwork/jp/javamagazine/Java-MJ16-Spark.pdf
+まずは、Soracom Air を使ってみる

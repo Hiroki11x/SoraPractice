@@ -1,0 +1,18 @@
+##AK-020ドングル貸していただきました
+http://qiita.com/Hiroki11x/private/ade570dc1f90289855ff
+#今日やったこと①
+6. Gate
+Spark context Web UI available at http://192.168.12.5:4040
+[所属している SIM] タブでは、このグループに所属している Air SIM の一覧を見ることができます。Air SIM をグループに所属させるには、「SIM 管理」画面から操作を行ってください。
+> Apache Sparkについてまとめの意味も兼ねて Qiitaで記事を書きました(まだ途中)
+http://sssslide.com/speakerdeck.com/kuenishi/mesos-frameworkfalsezuo-rifang-how-to-make-mesos-framework
+# 来週の自宅課題(先に@kimutansk さんのはてなブログの記事を読む)
+##Billing System の中身の Spring Boot入門(読む系のやつ)
+> JavaMagazineに乗ってたSparkのサンプルをローカルで動かす(終了)
+http://dev.classmethod.jp/etc/apache-spark_rdd_investigation/
+$ curl -X POST -d '{"username":"foo","sessionId":"bar"}' https://endorse.soracom.io
+細かい内容に入ってきたので、更新が難しくなってきました。他に記事を作るかもです。
+----略----
+> ラズパイセットアップ(ほぼドングル)、次回以降自分の持ってきます
+https://dev.soracom.io/jp/start/console/%22/jp/start/beam%22
+第6章(Sparkの高度なプログラミングに入りました)

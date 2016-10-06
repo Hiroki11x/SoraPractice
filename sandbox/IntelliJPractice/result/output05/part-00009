@@ -1,0 +1,26 @@
+16/10/06 09:12:55 WARN SparkContext: Use an existing SparkContext, some configuration may not take effect.
+この辺りをちゃんと勉強しなきゃいけなそう
+けど実行できず😭
+また、PairRDDのサンプルを多く作りました
+08:15-26:25までWFHしました
+Amazon Web Service の EC2 インスタンスで動かす話
+http://www.slideshare.net/hadoopxnttdata/apache-spark-spark
+http://www.techscore.com/tech/Java/ApacheJakarta/Maven/2/
+16/10/06 09:12:54 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+のhttps://endorse.soracom.io手前のスペースが見えづらい？
+MVNO mobile virtual network operator
+8. Gate (soracom vpgに関して)
+研究室のサーバーが(JAVA_HOMEが設定できなくて動かなくなってる！？)
+3. Funnel(Azure)
+SORACOM のユーザーコンソールにログインします。
+mvn clean && mvn compile && mvn package
+OP
+SORACOM Canal
+> Apache Sparkの資料をいっぱい印刷してるのを読む(続き)
+> おぐさんに鍵のこととか、AWSのIAMとsoracomのSAMに追加していただきました
+AWS // < -ESS EMR
+->jetty-clien を 7.4.4.v20110707に指定すればいけた
+明日は第5章(データとロードのセーブ)、第6章(Sparkの高度なプログラミング)あたりを習得したいです。
+参考
+？？僕の設定の問題？？
+gem soracom version

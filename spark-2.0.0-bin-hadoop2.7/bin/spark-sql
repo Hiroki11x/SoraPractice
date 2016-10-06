@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
@@ -15,5 +17,9 @@
 # limitations under the License.
 #
 
-# A Spark Worker will be started on each of the machines listed below.
-hiroki11x@yokota01
+if [ -z "${SPARK_HOME}" ]; then
+  export SPARK_HOME="$(cd "`dirname "$0"`"/..; pwd)"
+fi
+
+export _SPARK_CMD_USAGE="Usage: ./bin/spark-sql [options] [cli option]"
+exec "${SPARK_HOME}"/bin/spark-submit --class org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver "$@"

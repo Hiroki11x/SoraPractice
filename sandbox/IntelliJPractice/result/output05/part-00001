@@ -1,0 +1,15 @@
+# 今週の自宅課題
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Spark session available as 'spark'.
+##Apache Mesosの 概要理解
+      /_/
+ECS(EC2の上にDockerのレイヤーがあるやつ)のクラスタの中にコンポーネント
+試してみた記事その①
+##Apache Mesosの 環境構築 & Getting Started的なやつの一部
+MPIとか
+というかAzureが最近UI変えすぎたせいでめっちゃ違って色々難しい
+4. Funnel (Azure SORACOM Dev console これはバグ？)
+クレデンシャルの登録
+のIAM Management Consoleが見つけづらい。
+##Maven Spark Mesos SpringBoot の練習レポジトリ
+##Apache Mesosの 概要理解 スライドを読む

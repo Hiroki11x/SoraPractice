@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with
@@ -15,5 +17,10 @@
 # limitations under the License.
 #
 
-# A Spark Worker will be started on each of the machines listed below.
-hiroki11x@yokota01
+if [ -z "${SPARK_HOME}" ]; then
+  export SPARK_HOME="$(cd "`dirname "$0"`"/..; pwd)"
+fi
+
+source "${SPARK_HOME}"/bin/load-spark-env.sh
+export _SPARK_CMD_USAGE="Usage: ./bin/sparkR [options]"
+exec "${SPARK_HOME}"/bin/spark-submit sparkr-shell-main "$@"

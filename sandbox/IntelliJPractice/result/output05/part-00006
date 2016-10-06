@@ -1,0 +1,19 @@
+研究室のサーバで
+ってなっちゃう。
+http://www.oracle.com/webfolder/technetwork/jp/javamagazine/javamagazinevol27.zip
+粒度を良い感じで投げてサーバーへの負担を分割して計算
+https://oss.sios.com/guest-blog/guest-bog-20150624820
+編集で0.0.0.0/0の場合を追加、ターゲットのigw-ahogehogeみたいなのを入力します的な説明がもう少し細かくあって欲しい(初めて触った人目線、どの操作したらそうなるのかみたいなのが一枚一枚あると嬉しい)
+#Apache Spark の バッチ処理
+複数の導入シナリオ(スタンドアロン、YARN、Mesos、組み込み、クラウド)に関して内容を追加しました
+http://sssslide.com/speakerdeck.com/kuenishi/fen-san-sukeziyuramesosfalseshao-jie
+第8章(Sparkのチューニングとデバッグ)を月曜までに終えて
+Accumulater、クロージャ、pipe、ブロードキャスト変数
+http://qiita.com/Hiroki11x/items/438a33eabd25101737ff
+> NTT Data の書いてるSparkの記事のTwitter分析やってみる (趣味でやりたい範囲)
+他の名前にしなおせばできた
+[高度な設定] タブでは一般的にはあまり利用されないような設定変更を行うことができます。現時点ではグループの削除のみ行うことができます。
+https://oss.sios.com/guest-blog/guest-bog-20150624901
+#kyラスタモードのデモ
+#Apache Mesosの 概要理解 スライドを読む
+RDDのメソッド実行についての補足を書き加えました

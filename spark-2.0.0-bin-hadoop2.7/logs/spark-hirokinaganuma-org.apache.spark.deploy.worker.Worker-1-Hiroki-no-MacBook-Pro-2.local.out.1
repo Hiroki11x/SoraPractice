@@ -1,0 +1,21 @@
+Spark Command: /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/bin/java -cp /Users/hirokinaganuma/Desktop/SORACOM/SoraPractice/spark-2.0.0-bin-hadoop2.7/conf/:/Users/hirokinaganuma/Desktop/SORACOM/SoraPractice/spark-2.0.0-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 --class other.Sample01 --master spark://Hiroki-no-MacBook-Pro-2.local:6066 target/SparkPractice2-1.0-SNAPSHOT.jar
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+16/10/06 17:48:17 INFO Worker: Started daemon with process name: 19256@Hiroki-no-MacBook-Pro-2.local
+16/10/06 17:48:17 INFO SignalUtils: Registered signal handler for TERM
+16/10/06 17:48:17 INFO SignalUtils: Registered signal handler for HUP
+16/10/06 17:48:17 INFO SignalUtils: Registered signal handler for INT
+Usage: Worker [options] <master>
+
+Master must be a URL of the form spark://hostname:port
+
+Options:
+  -c CORES, --cores CORES  Number of cores to use
+  -m MEM, --memory MEM     Amount of memory to use (e.g. 1000M, 2G)
+  -d DIR, --work-dir DIR   Directory to run apps in (default: SPARK_HOME/work)
+  -i HOST, --ip IP         Hostname to listen on (deprecated, please use --host or -h)
+  -h HOST, --host HOST     Hostname to listen on
+  -p PORT, --port PORT     Port to listen on (default: random)
+  --webui-port PORT        Port for web UI (default: 8081)
+  --properties-file FILE   Path to a custom Spark properties file.
+                           Default is conf/spark-defaults.conf.

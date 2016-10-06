@@ -19,7 +19,9 @@ public class Sample01 {
         }
         JavaSparkContext sc = new JavaSparkContext(master, "basicavg", System.getenv("SPARK_HOME"), System.getenv("JARS"));
         JavaRDD<Integer> input = sc.parallelize(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
-        Integer Result = input.reduce((a, b) -> (a + b));
+        Integer Result = input.filter(s -> s%3==0).reduce((a, b) -> (a + b));
         System.out.println(Result);
+        Thread.sleep(10000000);
+        sc.stop();
     }
 }

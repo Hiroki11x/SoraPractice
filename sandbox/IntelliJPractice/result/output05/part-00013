@@ -1,0 +1,15 @@
+Type :help for more information.
+個人的にMesosの方がこれからの汎用性とかも考えてSparkと一緒に使うのはとてもいいなと思いました。
+StartガイドとかFAQとかドキュメントで変なとこをメモしながらやる
+明日は第5章(データとロードのセーブ)を終えました。
+2. Funnel(SDK)
+Apache Mesosあたりの話
+一昔前はこんな感じでできたっぽいけど
+# 今日やったこと
+Billing APIはSpringBoot
+soracom vpg はRubyのSDKからじゃ対応できていない、CLI使わなきゃだけど、その違いの説明が欲しいかも
+VPG の作成
+https://console.aws.amazon.com/iam/
+SORACOM Funnel(SDK 版)
+mavenとかたんと勉強しなきゃいけなそう
+- Apatch Spark

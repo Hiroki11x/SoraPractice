@@ -1,0 +1,26 @@
+16/10/06 09:12:54 WARN Utils: Your hostname, yokota01 resolves to a loopback address: 127.0.1.1; using 192.168.12.5 instead (on interface eth7)
+SORACOM Beam の利用　みたいなやつがリンク切れしてる
+計算リソースはクラウドなので無限
+http://www.slideshare.net/search/slideshow?searchfrom=header&q=Apache+Spark
+###関連してMavenについても
+ここでsandboxみたいな感じで、社外秘にしなくていいことを練習してます。
+今はNetWorkingみたいな
+##Apache Spark の バッチ処理
+必要に応じて概要を入力してください。
+今日はデータのI/O[補足]の所を新たに書き加えました。
+SIMごとの課金情報とかをスレッドで計算するのを最後計算するみたいなやつ
+Sparkのクラスタを管理したり　メソス　みたいなやつ
+第3章(RDDを用いたプログラミング)の途中です。
+これをもとに、Sparkクラスターの構築やってみようと思ったんですが、
+./README.md ./wordcounts
+[基本設定] タブでは現時点では SORACOM Beam の設定のみ行うことができます。SORACOM Beam 設定に関してはSORACOM Beam の利用を参照してください。
+[参考] Cloud Formation テンプレートを使用して VPC、および EC2 インスタンスを作成する
+これの簡単な資料を作りたいと思います。
+> Billing System の中身の Spring Boot入門(読む系のやつ)
+16/10/06 09:12:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+#Apache Spark 導入事例
+scala> sys.exit
+種別では、「AWS 認証情報」を選択します。
+にアクセスして、アクセスキーの作成してみたいな感じでやりますみたいな説明があると嬉しい
+##Apache Mesosの 環境構築 & Getting Started的なやつ
+またEC2上でSparkを動かすスクリプトが以前のバージョンにはあったのですが今の最新版ではなくなっているので、利用が非推奨ではないのかなとも思いました。
