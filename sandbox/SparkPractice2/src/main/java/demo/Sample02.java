@@ -8,7 +8,7 @@ import scala.Tuple2;
 /**
  * Created by hirokinaganuma on 2016/10/13.
  */
-public class Sample01 {
+public class Sample02 {
     public static void main(String[] args) throws Exception {
         String master;
         if (args.length > 0) {
@@ -22,22 +22,17 @@ public class Sample01 {
         JavaRDD<String> operatorList = sc.textFile("bin/input/Dummydata/operator-list.txt");//オペレーターID一覧のリスト
         JavaRDD<String> imsiItemList = sc.textFile("bin/input/Dummydata/imsi-item-list.txt");//imsiとそれに紐づく課金（ITEM-1からITEM-3とそれぞれの費用）が入っている
 
-        JavaPairRDD<String,String> imsiPairRDD = imsiList.mapToPair(s-> new Tuple2(s.split(",")[1],s.split(",")[0]));//imsiPairRDDはオペレータ−IDがkey,imsi番号がvalue
-//        imsiItemList.cache();
+        JavaPairRDD<String, Object> imsiPairRDD = imsiList.mapToPair(s-> new Tuple2(s.split(",")[0],s.split(",")[1]));//imsiPairRDDはオペレータ−IDがkey,imsi番号がvalue
 
         JavaPairRDD<String,Integer> itemPairRDD = imsiItemList.mapToPair(s-> new Tuple2(s.split(",")[0],Integer.valueOf(s.split(",")[2])));//imsiPairRDDはオペレータ−IDがkey,課金額がvalue
-//        itemPairRDD.cache();
 
         JavaPairRDD<String,Integer> itemReducedPairRDD = itemPairRDD.reduceByKey((x, y) -> x + y);//imsiごとの集計結果のLIST,imsiがkey,合計か金額がvalue
-//        itemReducedPairRDD.cache();
 
+        JavaRDD preJoinPairRDD = imsiPairRDD.join(itemReducedPairRDD).values();
+        JavaPairRDD<String, Integer> joinPairRDD = JavaPairRDD.fromJavaRDD(preJoinPairRDD);
+        JavaPairRDD<String, Integer> resultRDD = joinPairRDD.reduceByKey((x, y) -> x + y).sortByKey();
 
-
-
-//        imsiPairRDD.saveAsTextFile("bin/output/imsiPairRDD");
-//        itemPairRDD.saveAsTextFile("bin/output/itemPairRDD");
-        itemReducedPairRDD.saveAsTextFile("bin/output/itemReducedPairRDD");
-
+        resultRDD.saveAsTextFile("bin/output/resultRDD");
         ////最終出力としては、オペレーターIDごとに、もっているIMSIのITEM1から3までの合計が出る形
     }
 }
