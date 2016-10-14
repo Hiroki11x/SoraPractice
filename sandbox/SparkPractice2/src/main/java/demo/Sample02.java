@@ -14,7 +14,7 @@ public class Sample02 {
         if (args.length > 0) {
             master = args[0];
         } else {
-            master = "local";
+            master = "local[*]";
         }
         JavaSparkContext sc = new JavaSparkContext(master, "basicavg", System.getenv("SPARK_HOME"), System.getenv("JARS"));
 
@@ -24,6 +24,7 @@ public class Sample02 {
 
         JavaPairRDD<String, Object> imsiPairRDD = imsiList.mapToPair(s-> new Tuple2(s.split(",")[0],s.split(",")[1]));//imsiPairRDDはオペレータ−IDがkey,imsi番号がvalue
 
+        System.out.println(imsiPairRDD.partitions());
         JavaPairRDD<String,Integer> itemPairRDD = imsiItemList.mapToPair(s-> new Tuple2(s.split(",")[0],Integer.valueOf(s.split(",")[2])));//imsiPairRDDはオペレータ−IDがkey,課金額がvalue
 
         JavaPairRDD<String,Integer> itemReducedPairRDD = itemPairRDD.reduceByKey((x, y) -> x + y);//imsiごとの集計結果のLIST,imsiがkey,合計か金額がvalue
