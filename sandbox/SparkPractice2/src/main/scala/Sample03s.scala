@@ -24,30 +24,31 @@ object Hello {
         }).saveAsTextFile(file)
 
     }
-}
 
-object DynamoUtils {
 
-    def setupDynamoClientConnection(accessKey:String, secretKey:String): DynamoDB = {
-        val credentials = new BasicAWSCredentials(accessKey,secretKey)
-        val client = new AmazonDynamoDBClient(credentials)
-        client.setRegion(Region.getRegion(Regions.AP_NORTHEAST_1))
-        val dynamoDB = new DynamoDB(client)
+    object DynamoUtils {
 
-        val table = dynamoDB.getTable("sample")
+        def setupDynamoClientConnection(accessKey: String, secretKey: String): DynamoDB = {
+            val credentials = new BasicAWSCredentials(accessKey, secretKey)
+            val client = new AmazonDynamoDBClient(credentials)
+            client.setRegion(Region.getRegion(Regions.AP_NORTHEAST_1))
+            val dynamoDB = new DynamoDB(client)
 
-        val expressionAttributeNames = new util.HashMap[String,String]()
-        expressionAttributeNames.put("#p", "pageCount")
+            val table = dynamoDB.getTable("sample")
 
-        val expressionAttributeValues = new util.HashMap[String,Object]()
-        val num = 1.asInstanceOf[Object]
-        expressionAttributeValues.put(":val", num)
+            val expressionAttributeNames = new util.HashMap[String, String]()
+            expressionAttributeNames.put("#p", "pageCount")
 
-        val outcome = table.updateItem(
-            "id", 1,
-            "set #p = #p + :val",
-            expressionAttributeNames,
-            expressionAttributeValues)
-        dynamoDB
+            val expressionAttributeValues = new util.HashMap[String, Object]()
+            val num = 1.asInstanceOf[Object]
+            expressionAttributeValues.put(":val", num)
+
+            val outcome = table.updateItem(
+                "id", 1,
+                "set #p = #p + :val",
+                expressionAttributeNames,
+                expressionAttributeValues)
+            dynamoDB
+        }
     }
 }
