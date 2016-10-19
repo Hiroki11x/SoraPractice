@@ -1,5 +1,7 @@
+
 package demo;
 
+import org.apache.spark.SparkConf;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.regions.Region;
 import com.amazonaws.regions.Regions;
@@ -44,13 +46,7 @@ public class Sample03 {
         }).saveAsTextFile(file);
     }
 
-
-     /*
-            *
-            * WIP
-            *
-            *
-            *
+    
     static class DynamoUtils {
 
         static public DynamoDB setupDynamoClientConnection(String accessKey, String secretKey){
@@ -79,5 +75,5 @@ public class Sample03 {
         }
 
     }
-    */
+    
 }
