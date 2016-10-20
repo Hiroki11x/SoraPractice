@@ -1,6 +1,8 @@
+package dynamo;
 
-package demo;
-
+/**
+ * Created by hirokinaganuma on 2016/10/20.
+ */
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.regions.Region;
 import com.amazonaws.regions.Regions;
@@ -18,7 +20,7 @@ import java.util.List;
 /**
  * Created by hirokinaganuma on 2016/10/14.
  */
-public class Sample03 {
+public class DynamodbSample01 {
     public static void main(String[] args) throws Exception {
         String master;
         if (args.length > 0) {
@@ -48,14 +50,14 @@ public class Sample03 {
         System.out.println("----Start----");
 
         rdd.map(v -> {
-                Table table = dynamo.getTable("sample");
-                PrimaryKey key = new PrimaryKey("id", 1);
-                Item item = table.getItem(key);
-                return item.toString();
+            Table table = dynamo.getTable("sample");
+            PrimaryKey key = new PrimaryKey("id", 1);
+            Item item = table.getItem(key);
+            return item.toString();
         }).saveAsTextFile(file);
     }
 
-    
+
     static class DynamoUtils {
 
         static public DynamoDB setupDynamoClientConnection(String accessKey, String secretKey) {
