@@ -1,20 +1,17 @@
 
 package demo;
 
-import org.apache.spark.SparkConf;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.regions.Region;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
-import com.amazonaws.services.dynamodbv2.document.DynamoDB;
-import com.amazonaws.services.dynamodbv2.document.Item;
-import com.amazonaws.services.dynamodbv2.document.PrimaryKey;
-import com.amazonaws.services.dynamodbv2.document.Table;
+import com.amazonaws.services.dynamodbv2.document.*;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * Created by hirokinaganuma on 2016/10/14.
@@ -58,21 +55,25 @@ public class Sample03 {
             Table table = dynamoDB.getTable("sample");
 
 
+            //[Scala] val expressionAttributeNames = new util.HashMap[String,String]();
+            HashMap<String,String> expressionAttributeNames = new HashMap<>();
+            expressionAttributeNames.put("#p", "pageCount");
 
-                val expressionAttributeNames = new Util.HashMap[String,String]();
-        expressionAttributeNames.put("#p", "pageCount")
+            //[Scala] val expressionAttributeValues = new util.HashMap[String,Object]();
+            HashMap<String,Object> expressionAttributeValues = new HashMap<>();
 
-        val expressionAttributeValues = new util.HashMap[String,Object]();
-        val num = 1.asInstanceOf[Object];
-        expressionAttributeValues.put(":val", num);
+            //[Scala] val num = 1.asInstanceOf[Object];
+            Object num = (Object)1;
 
-        val outcome = table.updateItem(
+            expressionAttributeValues.put(":val", num);
+
+            UpdateItemOutcome outcome = table.updateItem(
                 "id", 1,
                 "set #p = #p + :val",
                 expressionAttributeNames,
                 expressionAttributeValues);
-        dynamoDB;
-        }
+                return dynamoDB;
+            }
 
     }
     
