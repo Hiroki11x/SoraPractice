@@ -3,9 +3,8 @@ package dynamo;
 /**
  * Created by hirokinaganuma on 2016/10/20.
  */
+
 import com.amazonaws.auth.BasicAWSCredentials;
-import com.amazonaws.regions.Region;
-import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 import com.amazonaws.services.dynamodbv2.document.*;
 import com.amazonaws.services.dynamodbv2.model.*;
@@ -23,10 +22,13 @@ import java.util.List;
 public class DynamodbSample01 {
     public static void main(String[] args) throws Exception {
         String master;
+        Boolean isLocal;
         if (args.length > 0) {
             master = args[0];
+            isLocal = true;
         } else {
             master = "local[*]";
+            isLocal = true;
         }
         JavaSparkContext sc = new JavaSparkContext(master, "basicavg", System.getenv("SPARK_HOME"), System.getenv("JARS"));
 
@@ -43,7 +45,7 @@ public class DynamodbSample01 {
         }
 
         //scalaではlazyとして遅延評価されていた
-        DynamoDB dynamo = DynamoUtils.setupDynamoClientConnection(accessKey, secretKey);
+        DynamoDB dynamo = DynamoUtils.setupDynamoClientConnection(accessKey, secretKey, isLocal);
         DynamoUtils.createTable(dynamo);
         DynamoUtils.registerTable(dynamo);
 
@@ -60,13 +62,26 @@ public class DynamodbSample01 {
 
     static class DynamoUtils {
 
-        static public DynamoDB setupDynamoClientConnection(String accessKey, String secretKey) {
+        static public DynamoDB setupDynamoClientConnection(String accessKey, String secretKey, Boolean isLocal) {
+//            AmazonDynamoDBClient client;
+            BasicAWSCredentials credentials;
+            if(isLocal){
+//                credentials = new BasicAWSCredentials("accessKey", "secretKey");
+//                client = new AmazonDynamoDBClient();
+//                client.setEndpoint("http://localhost:8000");
+                AmazonDynamoDBClient client = new AmazonDynamoDBClient(new BasicAWSCredentials("TestAccessKey","TestSecretKey"));
+                client.setEndpoint("http://localhost:8000");
+                return new DynamoDB(client);
+            }else{
+//                credentials = new BasicAWSCredentials(accessKey, secretKey);
+//                client = new AmazonDynamoDBClient(credentials);
+//                client.setRegion(Region.getRegion(Regions.AP_NORTHEAST_1));
+                return null;
+            }
 
-            BasicAWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
-            AmazonDynamoDBClient client = new AmazonDynamoDBClient(credentials);
-            client.setRegion(Region.getRegion(Regions.AP_NORTHEAST_1));
 
-            return new DynamoDB(client);
+
+
         }
 
         static public void createTable(DynamoDB dynamoDB){
