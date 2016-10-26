@@ -69,7 +69,7 @@ public class DynamodbSample01 {
 //                credentials = new BasicAWSCredentials("accessKey", "secretKey");
 //                client = new AmazonDynamoDBClient();
 //                client.setEndpoint("http://localhost:8000");
-                AmazonDynamoDBClient client = new AmazonDynamoDBClient(new BasicAWSCredentials("TestAccessKey","TestSecretKey"));
+                AmazonDynamoDBClient client = new AmazonDynamoDBClient(new BasicAWSCredentials("AWS_ACCESS_KEY_ID", "yourSecretAccessKey"));
                 client.setEndpoint("http://localhost:8000");
                 return new DynamoDB(client);
             }else{
