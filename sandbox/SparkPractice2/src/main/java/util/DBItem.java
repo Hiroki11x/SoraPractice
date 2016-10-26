@@ -1,4 +1,4 @@
-package dynamo;
+package util;
 
 /**
  * Created by hirokinaganuma on 2016/10/26.
