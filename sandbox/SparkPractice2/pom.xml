@@ -24,19 +24,20 @@
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk</artifactId>
-            <version>1.0.002</version>
+            <version>1.11.46</version>
         </dependency>
 
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-dynamodb</artifactId>
-            <version>1.11.41</version>
+            <version>1.11.46</version>
         </dependency>
 
 
     </dependencies>
     <properties>
         <java.version>1.8</java.version>
+        <scala.version>2.10</scala.version>
     </properties>
     <build>
         <pluginManagement>

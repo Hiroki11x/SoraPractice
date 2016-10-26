@@ -4,13 +4,16 @@ package dynamo;
  * Created by hirokinaganuma on 2016/10/20.
  */
 
+import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 import com.amazonaws.services.dynamodbv2.document.*;
 import com.amazonaws.services.dynamodbv2.model.*;
+import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -30,6 +33,8 @@ public class DynamodbSample01 {
             master = "local[*]";
             isLocal = true;
         }
+
+        SparkConf conf = new SparkConf();
         JavaSparkContext sc = new JavaSparkContext(master, "basicavg", System.getenv("SPARK_HOME"), System.getenv("JARS"));
 
         JavaRDD<Integer> rdd = sc.parallelize(Arrays.asList(-1,2,-3,4,-5));
@@ -62,16 +67,21 @@ public class DynamodbSample01 {
 
     static class DynamoUtils {
 
+        private static final String ACCESS_KEY_ID     = "access";
+        private static final String SECRET_ACCESS_KEY = "secret";
+        private static final String REGION            = "localhost";
+        private static final String ENDPOINT          = "http://localhost:8000";
+        private static final String TABLE_NAME = "chat";
+        private static final int ROOM_ID       = 1;
+        private static final int MAX_RESULT_SIZE = 10;
+
+        @PostConstruct
         static public DynamoDB setupDynamoClientConnection(String accessKey, String secretKey, Boolean isLocal) {
-//            AmazonDynamoDBClient client;
-            BasicAWSCredentials credentials;
             if(isLocal){
-//                credentials = new BasicAWSCredentials("accessKey", "secretKey");
-//                client = new AmazonDynamoDBClient();
-//                client.setEndpoint("http://localhost:8000");
-                AmazonDynamoDBClient client = new AmazonDynamoDBClient(new BasicAWSCredentials("AWS_ACCESS_KEY_ID", "yourSecretAccessKey"));
-                client.setEndpoint("http://localhost:8000");
-                return new DynamoDB(client);
+                AWSCredentials awsCredentials = new BasicAWSCredentials(ACCESS_KEY_ID, SECRET_ACCESS_KEY);
+                AmazonDynamoDBClient amazonDynamoDBClient = new AmazonDynamoDBClient(awsCredentials);
+                amazonDynamoDBClient.setEndpoint(ENDPOINT);
+                return new DynamoDB(amazonDynamoDBClient);
             }else{
 //                credentials = new BasicAWSCredentials(accessKey, secretKey);
 //                client = new AmazonDynamoDBClient(credentials);
