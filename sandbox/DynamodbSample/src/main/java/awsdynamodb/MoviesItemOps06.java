@@ -15,7 +15,7 @@ public class MoviesItemOps06 {
     public static void main(String[] args) throws Exception {
 
         AmazonDynamoDBClient client = new AmazonDynamoDBClient()
-                .withEndpoint("http://localhost:8000");
+                .withEndpoint("http://localhost:8080");
 
         DynamoDB dynamoDB = new DynamoDB(client);
 

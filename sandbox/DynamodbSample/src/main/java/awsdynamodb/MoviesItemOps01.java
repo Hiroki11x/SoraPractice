@@ -1,5 +1,6 @@
 package awsdynamodb; /**
  * Created by hirokinaganuma on 2016/10/27.
+ *
  */
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 import com.amazonaws.services.dynamodbv2.document.DynamoDB;
