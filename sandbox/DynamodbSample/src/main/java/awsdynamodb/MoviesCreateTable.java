@@ -36,6 +36,5 @@ public class MoviesCreateTable {
             System.err.println("Unable to create table: ");
             System.err.println(e.getMessage());
         }
-
     }
 }
