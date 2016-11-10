@@ -12,9 +12,9 @@ import org.apache.spark.api.java.JavaSparkContext;
 import java.util.Arrays;
 
 /**
- * Created by hirokinaganuma on 16/11/09.
+ * Created by hirokinaganuma on 16/11/10.
  */
-public class Sandbox01 {
+public class Sandbox02 {
     public static void main(String[] args) throws Exception {
         String master;
         if (args.length > 0) {
@@ -23,15 +23,15 @@ public class Sandbox01 {
             master = "local[0]";
         }
         JavaSparkContext sc = new JavaSparkContext(master, "basicavg", System.getenv("SPARK_HOME"), System.getenv("JARS"));
-
         JavaRDD<String> imsiList = sc.textFile("bin/input/Dummydata/imsi-list.txt");//imsiとオペレーターIDの関連付けのリスト
-//        JavaRDD<String> operatorList = sc.textFile("bin/input/Dummydata/operator-list.txt");//オペレーターID一覧のリスト
-//        JavaRDD<String> imsiItemList = sc.textFile("bin/input/Dummydata/imsi-item-list.txt");//imsiとそれに紐づく課金（ITEM-1からITEM-3とそれぞれの費用）が入っている
 
         AmazonDynamoDBClient client = new AmazonDynamoDBClient()
                 .withEndpoint("http://localhost:8000");
 
         DynamoDB dynamoDB = new DynamoDB(client);
+
+
+
         Table table = dynamoDB.getTable("imisListTable");
 
         if (table==null){

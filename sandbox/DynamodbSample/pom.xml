@@ -40,5 +40,30 @@
             <artifactId>aws-java-sdk-dynamodb</artifactId>
             <version>1.11.41</version>
         </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>jsr250-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.traviscrawford</groupId>
+            <artifactId>spark-dynamodb</artifactId>
+            <version>0.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.amazon.emr</groupId>
+            <artifactId>emr-dynamodb-hadoop</artifactId>
+            <version>4.2.0</version>
+        </dependency>
     </dependencies>
 </project>
