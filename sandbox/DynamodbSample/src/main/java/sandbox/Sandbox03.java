@@ -1,7 +1,7 @@
 package sandbox;
 
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
-import dynamodbutil.DynamoDbInputFormat;
+import org.apache.hadoop.dynamodb.read.DynamoDBInputFormat;
 import org.apache.hadoop.dynamodb.DynamoDBItemWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.JobConf;
@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * Created by hirokinaganuma on 16/11/10.
  */
-public class SparkOnDynamoDB {
+public class Sandbox03 {
     public static String ACCESSKEY="access";
     public static String SECRETKEY="secret";
     public static void main(String[] args) {
@@ -69,7 +69,7 @@ public class SparkOnDynamoDB {
         jobConf.set("mapred.input.format.class", "org.apache.hadoop.dynamodb.read.DynamoDBInputFormat");
 
 
-        JavaPairRDD<Text, DynamoDBItemWritable> userInstalledApps = sc.hadoopRDD(jobConf, DynamoDbInputFormat.class, Text.class, DynamoDBItemWritable.class);
+        JavaPairRDD<Text, DynamoDBItemWritable> userInstalledApps = sc.hadoopRDD(jobConf, DynamoDBInputFormat.class, Text.class, DynamoDBItemWritable.class);
 
         /*
         *   def hadoopRDD[K, V, F <: InputFormat[K, V]](
