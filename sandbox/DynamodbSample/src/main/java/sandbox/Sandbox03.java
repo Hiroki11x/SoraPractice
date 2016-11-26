@@ -55,7 +55,6 @@ public class Sandbox03 {
         JobConf jobConf = new JobConf(sc.hadoopConfiguration());
         jobConf.set("dynamodb.servicename","dynamodb");
         jobConf.set("dynamodb.input.tableName","imsiListTable");
-//        jobConf.set("dynamodb.input.tableName","userInstalledApp");
         jobConf.set("dynamodb.endpoint","http://localhost:8000");
 
 //        jobConf.set("dynamodb.regionid","us-east-1");//ローカルなどでセットしない
@@ -92,19 +91,21 @@ public class Sandbox03 {
                     Tuple2<Text, DynamoDBItemWritable> t)
                     throws Exception {
                 Text text = t._1();
+                System.out.println(text);
+                System.out.println("---------HOGEHOGE-----");
                 DynamoDBItemWritable item = t._2();
                 Map<String, AttributeValue> attrs = item.getItem();
-                AttributeValue imeiAttr = attrs.get("imei");
-                String imei = imeiAttr.getS();
-                AttributeValue appsAttr = attrs.get("apps");
-                return new Tuple2<String, String>(imei, appsAttr.toString());
+                AttributeValue imeiAttr = attrs.get("imsi");
+                String imsi = imeiAttr.toString();
+                AttributeValue appsAttr = attrs.get("operatorID");
+                return new Tuple2<String, String>(imsi, appsAttr.toString());
             }
         });
 
-        System.out.println(datas.collect());
-//        datas.saveAsTextFile(output);
+//        System.out.println(datas.collect());
+        datas.saveAsTextFile(output);
         long end = System.currentTimeMillis();
         System.out.println("=============================>spend time=" + (end - start) + "ms");
-        sc.stop();
+//        sc.stop();
     }
 }

@@ -7,7 +7,6 @@ import com.amazonaws.services.dynamodbv2.document.PutItemOutcome;
 import com.amazonaws.services.dynamodbv2.document.Table;
 import com.amazonaws.services.dynamodbv2.model.*;
 import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.api.java.JavaSparkContext;
 
 import java.util.Arrays;
 
@@ -20,11 +19,11 @@ public class Sandbox01 {
         if (args.length > 0) {
             master = args[0];
         } else {
-            master = "local[0]";
+            master = "local";
         }
-        JavaSparkContext sc = new JavaSparkContext(master, "basicavg", System.getenv("SPARK_HOME"), System.getenv("JARS"));
-
-        JavaRDD<String> imsiList = sc.textFile("bin/input/Dummydata/imsi-list.txt");//imsiとオペレーターIDの関連付けのリスト
+//        JavaSparkContext sc = new JavaSparkContext(master, "basicavg", System.getenv("SPARK_HOME"), System.getenv("JARS"));
+//
+//        JavaRDD<String> imsiList = sc.textFile("bin/input/Dummydata/imsi-list.txt");//imsiとオペレーターIDの関連付けのリスト
 //        JavaRDD<String> operatorList = sc.textFile("bin/input/Dummydata/operator-list.txt");//オペレーターID一覧のリスト
 //        JavaRDD<String> imsiItemList = sc.textFile("bin/input/Dummydata/imsi-item-list.txt");//imsiとそれに紐づく課金（ITEM-1からITEM-3とそれぞれの費用）が入っている
 
@@ -32,12 +31,14 @@ public class Sandbox01 {
                 .withEndpoint("http://localhost:8000");
 
         DynamoDB dynamoDB = new DynamoDB(client);
-        Table table = dynamoDB.getTable("imisListTable");
+        createTable(dynamoDB);
 
-        if (table==null){
-            table = createTable(dynamoDB);
-        }
-        registerRecords(table,imsiList);
+//        Table table = dynamoDB.getTable("imisListTable");
+//
+//        if (table==null){
+//            table = createTable(dynamoDB);
+//        }
+//        registerRecords(table,imsiList);
     }
 
     public static Table createTable(DynamoDB dynamoDB) {
@@ -49,7 +50,7 @@ public class Sandbox01 {
                             new KeySchemaElement("imsi", KeyType.HASH),  //Partition key
                             new KeySchemaElement("operatorID", KeyType.RANGE)), //Sort key
                     Arrays.asList(
-                            new AttributeDefinition("imsi", ScalarAttributeType.N),//数字として
+                            new AttributeDefinition("imsi", ScalarAttributeType.S),//数字として
                             new AttributeDefinition("operatorID", ScalarAttributeType.S)),//文字列として
                     new ProvisionedThroughput(10L, 10L));//TODO これよくわかってない
             table.waitForActive();
