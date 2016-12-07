@@ -85,6 +85,8 @@ public class Sandbox03 {
             }
         * */
 
+
+        //以下が実行されていない
         JavaPairRDD<String, String> datas = userInstalledApps.mapToPair(new PairFunction<Tuple2<Text,DynamoDBItemWritable>, String, String>() {
             @Override
             public Tuple2<String, String> call(
