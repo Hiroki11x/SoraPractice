@@ -56,17 +56,10 @@ public class Sandbox04 {
         JavaSparkContext sc = new JavaSparkContext(sparkConf);
         JobConf jobConf = new JobConf(sc.hadoopConfiguration());
         jobConf.set("dynamodb.servicename","dynamodb");
-        jobConf.set("dynamodb.input.tableName","userInstalledApp");
+        jobConf.set("dynamodb.input.tableName","imsiListTable");
         jobConf.set("dynamodb.endpoint","http://localhost:8000");
-
-//        jobConf.set("dynamodb.regionid","us-east-1");//ローカルなどでセットしない
-
-        jobConf.set("dynamodb.throughput.read",dynamodbThroughputRead);
-        jobConf.set("dynamodb.throughput.read.percent",dynamodbThroughputReadPercent);
-        jobConf.set("dynamodb.max.map.tasks",dynamodbMaxMapTasks);
-
-        jobConf.set("dynamodb.awsAccessKeyId", ACCESSKEY);
-        jobConf.set("dynamodb.awsSecretAccessKey", SECRETKEY);
+//        jobConf.set("dynamodb.awsAccessKeyId", ACCESSKEY);
+//        jobConf.set("dynamodb.awsSecretAccessKey", SECRETKEY);
         jobConf.set("mapred.output.format.class", "org.apache.hadoop.dynamodb.write.DynamoDBOutputFormat");
         jobConf.set("mapred.input.format.class", "org.apache.hadoop.dynamodb.read.DynamoDBInputFormat");
 
